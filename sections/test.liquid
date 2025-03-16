@@ -1,0 +1,46 @@
+{{ section.settings.test_liquid }}
+
+<div class="page-width">
+  {%  assign myString = 'Hello' %}
+  <p>{{ myString }}</p>
+
+  {% capture myString2 %}
+  This is my second string
+  {% endcapture %}
+  <p>{{ myString2 }}</p>
+
+  {% assign fruits = "Apple, Banana, Pear, Orange" | split: ", " %}
+  <ul>
+  {% for fruit in fruits %}
+  <li>{{ fruit }}</li>
+{% endfor %}
+    </ul>
+
+  {%  assign age = 16 %}
+  {%  if age > 20 and age < 40 %}
+    You can view the page
+    {% elsif age > 15 %}
+    You can view some parts of the page
+  {% else %}
+    you are to young
+  {% endif %}
+</div>
+
+{% schema %}
+{
+   "name": "Test Liquid",
+   "settings": [
+      {
+         "type": "liquid",
+         "id": "test_liquid",
+         "label": "Test Liquid",
+         "info": "Add app snippets or other liquid code to create advanced customizations."
+      }
+   ],
+   "presets": [
+      {
+         "name": "Test Liquid"
+      }
+   ]
+}
+{% endschema %}
