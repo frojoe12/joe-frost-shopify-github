@@ -54,7 +54,7 @@
           "settings": {
             "heading": "Details",
             "icon": "none",
-            "content": "{{ product.metafields.custom.designer.value.product_types | metafield_tag }}",
+            "content": "<ul><li>Country of Origin: {{ product.metafields.custom.origin_country.value }}</li><li>Power Output: {{ product.metafields.custom.power_output.value }}</li></ul>",
             "page": ""
           }
         },
