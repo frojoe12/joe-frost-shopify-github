@@ -36,8 +36,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/placement-image-sublime-landscape.png",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/easter-gifts-sublime.jpg",
+        "image_overlay_opacity": 10,
         "image_height": "small",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
