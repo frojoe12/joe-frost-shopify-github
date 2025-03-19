@@ -23,7 +23,7 @@
           "type": "text",
           "settings": {
             "text": "<strong>Explore our Spring Gifts for Easter and Mothers Day</strong>",
-            "text_style": "body"
+            "text_style": "subtitle"
           }
         },
         "button": {
