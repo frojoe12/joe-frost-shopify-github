@@ -60,7 +60,7 @@
     "custom_liquid_dqwHHP": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{ creator.name }}\n{% for product in creator.product %}\n  {{ product.title }}\n{% endfor %}",
+        "custom_liquid": "{{ metaobject.name }}\n{% for product in metaobject.products %}\n  {{ product.title }}\n{% endfor %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
