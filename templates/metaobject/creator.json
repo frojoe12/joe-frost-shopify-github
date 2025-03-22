@@ -9,16 +9,6 @@
  */
 {
   "sections": {
-    "page_MCLnfD": {
-      "type": "page",
-      "settings": {
-        "page": "",
-        "heading_size": "h1",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_VjrcEG": {
       "type": "image-with-text",
       "blocks": {
@@ -70,7 +60,7 @@
     "custom_liquid_dqwHHP": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% for product in creator.product %}\n  {{ product.title }}\n{% endfor %}",
+        "custom_liquid": "{{ creator.name }}\n{% for product in creator.product %}\n  {{ product.title }}\n{% endfor %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -78,7 +68,6 @@
     }
   },
   "order": [
-    "page_MCLnfD",
     "image_with_text_VjrcEG",
     "custom_liquid_dqwHHP"
   ]
