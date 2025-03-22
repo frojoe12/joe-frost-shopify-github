@@ -1,6 +1,9 @@
 {{ section.settings.test_liquid }}
 <script>
-document.querySelector(".h1").innerHTML = "Another product";
+  setTimout(function(){
+    document.querySelector(".h1").innerHTML = "Another product";
+  },1000);
+
 </script>
 <div class="page-width">
   {%  if product.title %}
