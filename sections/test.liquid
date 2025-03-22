@@ -1,15 +1,5 @@
 {{ section.settings.test_liquid }}
-<script>
-  setTimeout(function(){
-    document.querySelector("h1").append(" - from this range");
-    console.log('updated!');
-  },1000);
-  setTimeout(function(){
-    document.querySelector("h1").prepend("Dont forget - ");
-    console.log('updated!');
-  },2000);
 
-</script>
 <div class="page-width">
   {%  if product.title %}
     Product title: {{ product.title }}
