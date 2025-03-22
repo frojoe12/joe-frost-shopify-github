@@ -3,7 +3,8 @@
 <div class="page-width">
   {%  if product.category %}
     Title: {{ product.title }}<br />
-    Other products: {{ all_products["product-3"].title }}
+    Other products: {{ all_products["product-3"].title }}<br />
+    {{  content_for_header }}
   {% endif %}
   {%  assign myString = 'Hello' %}
   <p>{{ myString }}</p>
