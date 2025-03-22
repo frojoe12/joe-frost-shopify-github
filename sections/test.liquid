@@ -1,6 +1,9 @@
 {{ section.settings.test_liquid }}
 
 <div class="page-width">
+  {%  if product.title %}
+    Product title: {{ product.title }}
+  {% endif %}
   {%  assign myString = 'Hello' %}
   <p>{{ myString }}</p>
 
