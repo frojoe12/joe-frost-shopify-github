@@ -60,7 +60,7 @@
     "custom_liquid_dqwHHP": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{{ metaobject.name }}\n{% for product in metaobject.products %}\n  {{ product.title }}\n{% endfor %}",
+        "custom_liquid": "<div style=\"display:flex; flex-direction:column;\">\n{% for product in \nmetaobject.products.value %}\n  <div>{{ product.title }}</div>\n{% endfor %}\n</div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
