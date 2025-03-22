@@ -2,7 +2,8 @@
 
 <div class="page-width">
   {%  if product.category %}
-    Category: {{ product.title }}
+    Title: {{ product.title }}
+    Other products: {{ all_products["product_2"].title }}
   {% endif %}
   {%  assign myString = 'Hello' %}
   <p>{{ myString }}</p>
