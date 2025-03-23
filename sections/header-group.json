@@ -64,7 +64,6 @@
     },
     "breadcrumbs_hEgQrD": {
       "type": "breadcrumbs",
-      "disabled": true,
       "settings": {
         "breadcrumbs_liquid": "",
         "padding_top": 8,
