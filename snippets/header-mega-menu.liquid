@@ -4,30 +4,7 @@
   Usage:
   {% render 'header-mega-menu' %}
 {% endcomment %}
-<script>	
-  function bindMouseOverToMegaMenu (item) {
-    console.log(item);
-    item.addEventListener("mouseover", () => {
-      console.log("mouseover" + item)
-        item.setAttribute("open", true);
-        item.querySelector(".mega-menu__content").addEventListener("mouseover", () => {
-          item.setAttribute("open", true);
-        });
-        item.querySelector(".mega-menu__content").addEventListener("mouseleave", () => {
-          item.removeAttribute("open");
-        });
-      item.addEventListener("mouseleave", () => {
-        item.removeAttribute("open");
-      });
-    });
-  }
-  setTimeout(function(){
-      let items = document.querySelector(".header__inline-menu").querySelectorAll(".mega-menu-outer-item");
-  items.forEach(bindMouseOverToMegaMenu);
-  },1000)
 
-  
-</script>
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
@@ -115,3 +92,27 @@
     {%- endfor -%}
   </ul>
 </nav>
+<script>	
+  function bindMouseOverToMegaMenu (item) {
+    console.log(item);
+    item.addEventListener("mouseover", () => {
+      console.log("mouseover" + item)
+        item.setAttribute("open", true);
+        item.querySelector(".mega-menu__content").addEventListener("mouseover", () => {
+          item.setAttribute("open", true);
+        });
+        item.querySelector(".mega-menu__content").addEventListener("mouseleave", () => {
+          item.removeAttribute("open");
+        });
+      item.addEventListener("mouseleave", () => {
+        item.removeAttribute("open");
+      });
+    });
+  }
+
+      let items = document.querySelector(".header__inline-menu").querySelectorAll(".mega-menu-outer-item");
+  items.forEach(bindMouseOverToMegaMenu);
+
+
+  
+</script>
