@@ -191,9 +191,9 @@
         endif
       endif
     %}
-    {{ section.settings.menu_type_desktop }}
+    
     {% if section.settings.menu_type_desktop == 'mega' %}
-      megamenu
+      {{ section.settings.menu_type_desktop }}
       {% endif %}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
