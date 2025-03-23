@@ -5,7 +5,6 @@
   {% render 'header-mega-menu' %}
 {% endcomment %}
 <script>	
-  console.log("start");
   function bindMouseOverToMegaMenu (item) {
     console.log(item);
     item.addEventListener("mouseover", () => {
@@ -22,8 +21,11 @@
       });
     });
   }
-  let items = document.querySelector(".header__inline-menu").querySelectorAll("details.mega-menu");
+  setTimeout(function(){
+      let items = document.querySelector(".header__inline-menu").querySelectorAll("details.mega-menu");
   items.forEach(bindMouseOverToMegaMenu);
+  },1000)
+
   
 </script>
 <nav class="header__inline-menu">
