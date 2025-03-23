@@ -191,6 +191,9 @@
         endif
       endif
     %}
+    {% if section.settings.menu == 'megamenu' %}
+      megamenu
+      {% endif %}
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
