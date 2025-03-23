@@ -22,7 +22,7 @@
     });
   }
   setTimeout(function(){
-      let items = document.querySelector(".header__inline-menu").querySelectorAll("details.mega-menu");
+      let items = document.querySelector(".header__inline-menu").querySelectorAll(".mega-menu-outer-item");
   items.forEach(bindMouseOverToMegaMenu);
   },1000)
 
@@ -34,7 +34,7 @@
       <li>
         {%- if link.links != blank -%}
           <header-menu>
-            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu mega-menu-outer-item">
               <summary
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
